@@ -574,4 +574,141 @@
     <string name="screen_off_animation_title">关屏动画</string>
     <string name="screen_off_animation_summary">关闭屏幕时显示 CRT 电视关闭的动画</string>
     <string name="intent_sender_data_label"><xliff:g id="data">数据：</xliff:g></string>
+	<!-- Translation TO CN by cofface -->
+	<!-- vibrate during phone calls -->
+    <string name="notification_vibrate_during_calls_title">通话振动</string>
+    <string name="notification_vibrate_during_calls_summary">通话中如有来电将振动提醒</string>
+
+<!-- PERSONALIZATION Settings  -->
+    <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
+    <string name="header_category_interface">个性化设置</string>
+
+    <!-- Homescreen settings  -->
+    <string name="homescreen_settings_title">主屏</string>
+	
+<!-- System Interface settings  -->
+    <string name="system_settings_title">界面设置</string>
+	
+   <string name="display_lockscreen_rotation_title">锁屏旋转</string>
+
+   <string name="profile_trigger_configure">触发器配置</string>
+   <string name="profile_triggers">触发器</string>
+   <string name="profile_trigger_filter_all">所有触发器</string>
+   <string name="profile_trigger_filter_wifi">Wi-Fi 触发</string>
+   <string name="profile_trigger_filter_bluetooth">蓝牙触发</string>
+
+   <string name="link_volume_ringtones">链接铃声和通知音量</string>
+   <string name="link_volume_mutes">静音模式通知</string>
+
+   <string name="display_lights_settings_title">显示和LED</string>
+   <string name="lights_category_title">LED</string>
+
+   <string name="automation_effects_title">自动和触摸</string>
+
+   <string name="button_settings">按键</string>
+   <string name="hardware_keys_home_key_title">HOME键</string>
+   <string name="hardware_keys_menu_key_title">菜单键</string>
+   <string name="hardware_keys_assist_key_title">搜索键</string>
+   <string name="hardware_keys_appswitch_key_title">最近按钮</string>
+   <string name="hardware_keys_volume_keys_title">音量键</string>
+   <string name="hardware_keys_short_press_title">短按操作</string>
+   <string name="hardware_keys_long_press_title">长按操作</string>
+
+   <string name="home_wake_title">主页键唤醒</string>
+   <string name="home_wake_summary">按Home键将唤醒您的设备</string>
+   <string name="volume_wake_title">音量键唤醒</string>
+   <string name="volume_wake_summary">按下音量键将唤醒您的设备</string>
+	
+   <!-- Swap volume buttons when the screen is rotated -->
+   <string name="swap_volume_buttons_title">调换音量键</string>
+   <string name="swap_volume_buttons_summary">屏幕旋转时调换音量键</string>	
+
+   <string name="navigation_bar_category">导航栏</string>
+   <string name="storage_rescan_media">重新扫描介质为存储卷</string>
+   <string name="storage_rescan_media_complete">扫描完成</string>
+
+   <string name="title_tile_camera">相机</string>
+<string name="lockscreen_enable_widgets_title">部件分页</string>
+<string name="lockscreen_enable_widgets_summary">允许多个部件分页选择和添加</string>
+<string name="lockscreen_enable_camera_title">相机部件</string>
+<string name="lockscreen_enable_camera_summary">解锁屏幕的右侧显示相机部件</string>
+<string name="lockscreen_music_controls_title">音乐控制</string>
+<string name="lockscreen_music_controls_summary">播放音乐时显示播放器控制</string>
+
+<string name="safe_headset_volume_title">耳机音量控制</string>
+
+<string name="auto_brightness_setup_title">自动亮度</string>
+<string name="auto_brightness_adjustment_title">亮度调节</string>
+<string name="auto_brightness_twilight_adjustment">根据昼夜调节</string>
+
+<string name="wake_when_plugged_or_unplugged_title">插件唤醒</string>
+<string name="wake_when_plugged_or_unplugged_summary">充电器连接或断开时，打开屏幕</string>
+
+<string name="confirm_delete_apn">APN信息将被删除.</string>
+
+<!-- Privacy Guard -->
+    <string name="privacy_guard_switch_label">启用隐私卫士</string>
+    <string name="privacy_guard_dlg_title">是否启用隐私卫士?</string>
+    <string name="privacy_guard_dlg_text">当启用隐私卫士时, 应用将无法访问个人隐私数据, 例如: 联系人, 短信或通话记录.</string>
+    <string name="privacy_guard_dlg_system_app_text">当启用隐私卫士，内置的应用程序将无法访问或提供个人数据。这可能会导致其他应用程序胡作非为。</string>
+    <string name="privacy_guard_default_title">默认启用隐私卫士</string>
+    <string name="privacy_guard_default_summary">>默认对新安装的应用启用隐私卫士</string>
+    <string name="privacy_guard_manager_title">隐私卫士</string>
+    <string name="privacy_guard_manager_summary">管理哪些应用可以访问您的个人资料</string>
+    <string name="privacy_guard_no_user_apps">未安装应用</string>
+    <string name="privacy_guard_filter_does_not_match">没有安装具有相关权限的应用</string>
+    <string name="privacy_guard_help_title">帮助</string>
+    <string name="privacy_guard_reset_title">重置</string>
+    <string name="privacy_guard_help_text">在此界面上, 您可以直接通过点击来选择在哪些应用上启用隐私卫士. 选中的应用将无法访问个人隐私数据, 例如: 联系人, 短信或通话记录. 长按一个条目将打开此应用的详细信息页面.\n\n默认情况下不显示内置的应用. 如果您想显示内置应用或只显示那些在权限声明中需要访问个人隐私数据的应用, 请在菜单中选择相应的选项.</string>
+    <string name="privacy_guard_manager_show_system_apps">内置的应用程序</string>
+    <string name="privacy_guard_manager_filter_permissions">权限过滤</string>
+
+    <!-- Blacklist preferences -->
+    <string name="blacklist_title">黑名单</string>
+    <string name="blacklist_edit_dialog_title">编辑黑名单</string>
+    <string name="blacklist_prefs">设置</string>
+    <string name="blacklist_button_delete">删除</string>
+    <string name="blacklist_empty_text">您尚未设置任何黑名单号码，按(+)添加。</string>
+    <string name="blacklist_disabled_empty_text">要拦截某些号码的电话或短信，请启用黑名单。</string>
+    <string name="blacklist_summary_disabled">已禁用</string>
+    <string name="blacklist_summary">黑名单中电话号码的电话和短信将被阻止</string>
+    <string name="blacklist_notify">显示通知</string>
+    <string name="blacklist_private_numbers_title">私人号码</string>
+    <string name="blacklist_private_numbers_summary_disabled">不要拦截私人号码的电话</string>
+    <string name="blacklist_private_numbers_summary">拦截来自私人号码的<xliff:g id="type">%s</xliff:g></string>
+    <string name="blacklist_unknown_numbers_title">未知号码</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">不要拦截来自通讯录以外的电话和短信</string>
+    <string name="blacklist_unknown_numbers_summary">拦截来自通讯录以外的<xliff:g id="type">%s</xliff:g></string>
+    <string name="blacklist_summary_type_calls_only">电话</string>
+    <string name="blacklist_summary_type_messages_only">短信</string>
+    <string name="blacklist_summary_type_calls_and_messages">电话和短信</string>
+    <string name="blacklist_regex_title">使用通配符</string>
+    <string name="blacklist_regex_summary">使用 . 作为通配符和 * 作为重复字符, 例如: 123.* 将会阻止所有 123 为前缀的号码; .*123.* 将会阻止所有包含 123 的号码</string>
+    <string name="blacklist_policy_block_calls">拦截电话</string>
+    <string name="blacklist_policy_block_messages">拦截短信</string>
+
+    <!-- Blacklist management -->
+    <string name="add_blacklist_number">添加号码</string>
+    <string name="remove_blacklist_number_title">移除号码</string>
+    <string name="remove_blacklist_entry">确认删除此黑名单条目?</string>
+    <string name="select_contact">选择联系人</string>
+	 <string name="app_ops_title">应用权限</string>
+    <string name="app_ops_summary">管理应用程序的权限（请注意，错误的设置可能导致程序无法工作）</string>
+
+    <!-- Hardware tunables - Vibrator intensity -->
+    <string name="vibrator_intensity_title">振动器强度</string>
+    <string name="vibrator_warning">不推荐数值高于%1$d</string>
+
+    <!-- Hardware tunables - Color calibration -->
+    <string name="color_calibration_title">颜色校准</string>
+    <string name="color_calibration_summary">校准屏幕上的颜色</string>
+    <string name="color_red_title">红</string>
+    <string name="color_green_title">绿</string>
+    <string name="color_blue_title">蓝</string>
+
+    <!--  Other device settings -->
+    <string name="more_device_controls_title">更多\u2026</string>
+    <string name="more_device_settings_title">其他设备选项</string>
+    <string name="sensors_motors_title">传感器</string>
+    <string name="display_calibration_title">显示校准</string>
 </resources>
