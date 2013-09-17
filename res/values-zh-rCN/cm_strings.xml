@@ -711,6 +711,7 @@
     <string name="power_notifications_ringtone_silent">静音</string>
     <string name="screen_off_animation_title">关屏动画</string>
     <string name="screen_off_animation_summary">关闭屏幕时显示 CRT 电视关闭的动画</string>
+    <string name="intent_sender_data_label"><xliff:g id="data">数据：</xliff:g></string>
     <string name="confirm_delete_apn">此 APN 将被删除.</string>
     <string name="privacy_guard_switch_label">启用隐私卫士</string>
     <string name="privacy_guard_dlg_title">是否启用隐私卫士?</string>
