@@ -4544,4 +4544,8 @@
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
     <string name="regulatory_info_text"></string>
+    
+    <!-- Traffic -->
+    <string name="statusbar_show_traffic_title">Show traffic</string>
+    <string name="statusbar_show_traffic_summary">Show traffic stats in status bar.</string>
 </resources>

@@ -40,10 +40,12 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String STATUS_BAR_BATTERY = "status_bar_battery";
     private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
     private static final String STATUS_BAR_CATEGORY_GENERAL = "status_bar_general";
+	private static final String STATUS_BAR_SHOW_TRAFFIC = "status_bar_show_traffic"; //增加状态栏网速 by cofface
 
     private ListPreference mStatusBarAmPm;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarCmSignal;
+	private CheckBoxPreference mStatusBarShowTraffic; //增加状态栏网速 by cofface
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,8 +57,12 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         ContentResolver resolver = getActivity().getContentResolver();
 
         mStatusBarAmPm = (ListPreference) prefSet.findPreference(STATUS_BAR_AM_PM);
+		mStatusBarShowTraffic = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_SHOW_TRAFFIC);  //状态栏网速 by cofface
         mStatusBarBattery = (ListPreference) prefSet.findPreference(STATUS_BAR_BATTERY);
         mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_SIGNAL);
+		
+		mStatusBarShowTraffic.setChecked(Settings.System.getInt(resolver, Settings.System.STATUS_BAR_SHOW_TRAFFIC, 1) == 1); //状态栏网速 by cofface
+        mStatusBarShowTraffic.setOnPreferenceChangeListener(this); //状态栏网速 by cofface
 
         if (DateFormat.is24HourFormat(getActivity())) {
             ((PreferenceCategory) prefSet.findPreference(STATUS_BAR_CLOCK_CATEGORY))
@@ -125,6 +131,12 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             int index = mStatusBarCmSignal.findIndexOfValue((String) newValue);
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_SIGNAL_TEXT, signalStyle);
             mStatusBarCmSignal.setSummary(mStatusBarCmSignal.getEntries()[index]);
+            return true;
+        }
+		//状态栏网速 by cofface
+		else if (preference == mStatusBarShowTraffic) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_SHOW_TRAFFIC, value ? 1 : 0);
             return true;
         }
 

@@ -1901,4 +1901,8 @@
     <string name="user_image_take_photo" msgid="1280274310152803669">"拍照"</string>
     <string name="user_image_choose_photo" msgid="7940990613897477057">"从图库中选择照片"</string>
     <string name="regulatory_info_text" msgid="5623087902354026557"></string>
+    
+    <!-- Traffic -->
+    <string name="statusbar_show_traffic_title">显示网速</string>
+    <string name="statusbar_show_traffic_summary">在状态栏上显示网速状态.</string>
 </resources>
